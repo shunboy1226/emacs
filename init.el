@@ -1,3 +1,18 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; for MacOSX
+;; input method
+(setq default-input-method "MacOSX")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; for Windows
+;; font
+;; (set-face-font 'default "ＭＳ ゴシック 10")
+;; (prefer-coding-system 'utf-8-unix)
+;; (set-keyboard-coding-system 'utf-8)
+;; (set-file-name-coding-system 'cp932)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; fullscreen
 (set-frame-parameter nil 'fullscreen 'maximized)
 
@@ -10,13 +25,10 @@
 ;; images
 (auto-image-file-mode t)
 
-;; input method
-(setq default-input-method "MacOSX")
-
 ;; path
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
-;; default
+;; environment
 (set-language-environment 'Japanese)
 
 ;; auto reload
@@ -28,7 +40,7 @@
 (setq auto-save-list-file-prefix nil)
 
 ;; tab
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 
 ;; beep
@@ -50,3 +62,4 @@
 ;; indet
 (add-hook 'css-mode-hook (setq css-indent-offset 2))
 (add-hook 'js-mode-hook (setq js-indent-level 2))
+
