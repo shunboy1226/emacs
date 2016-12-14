@@ -13,8 +13,17 @@
 ;; (set-file-name-coding-system 'cp932)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; fullscreen
-(set-frame-parameter nil 'fullscreen 'maximized)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; General
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; environment
+(set-language-environment 'Japanese)
+
+;; backup
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq auto-save-list-file-prefix nil)
 
 ;; theme
 (load-theme 'tango-dark t)
@@ -22,22 +31,14 @@
 ;; frame
 (tool-bar-mode 0)
 
+;; fullscreen
+(set-frame-parameter nil 'fullscreen 'maximized)
+
 ;; images
 (auto-image-file-mode t)
 
-;; path
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-
-;; environment
-(set-language-environment 'Japanese)
-
 ;; auto reload
 (global-auto-revert-mode 1)
-
-;; backup
-(setq make-backup-files nil)
-(setq auto-save-default nil)
-(setq auto-save-list-file-prefix nil)
 
 ;; tab
 (setq-default tab-width 2)
@@ -46,15 +47,15 @@
 ;; beep
 (setq ring-bell-function 'ignore)
 
+;; brackets
+(show-paren-mode 1)
+(setq show-paren-style 'mixed)
+
 ;; blank
 (setq-default show-trailing-whitespace t)
 
 ;; cursor
 ;; (global-hl-line-mode 0)
-
-;; brackets
-(show-paren-mode 1)
-(setq show-paren-style 'mixed)
 
 ;; line-num
 (global-linum-mode t)
