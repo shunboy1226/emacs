@@ -28,6 +28,9 @@
 (setq auto-save-default nil)
 (setq auto-save-list-file-prefix nil)
 
+;; inhibit startup message
+(setq inihibit-startup-message t)
+
 ;; theme
 (load-theme 'tango-dark t)
 
