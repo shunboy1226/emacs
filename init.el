@@ -6,7 +6,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; for Windows
-;; font
+;; (setq default-input-method "W32-IME")
 ;; (set-face-font 'default "ＭＳ ゴシック 10")
 ;; (prefer-coding-system 'utf-8-unix)
 ;; (set-keyboard-coding-system 'utf-8)
