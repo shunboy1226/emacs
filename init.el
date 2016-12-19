@@ -8,7 +8,6 @@
 ;; for Windows
 ;; (setq default-input-method "W32-IME")
 ;; (set-face-font 'default "ＭＳ ゴシック 10")
-;; (set-keyboard-coding-system 'utf-8)
 ;; (set-file-name-coding-system 'cp932)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -18,6 +17,7 @@
 
 ;; utf-8 / unix
 (prefer-coding-system 'utf-8-unix)
+(set-keyboard-coding-system 'utf-8)
 
 ;; load-path
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
