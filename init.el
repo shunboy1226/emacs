@@ -1,30 +1,25 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; for MacOSX
+;; Path
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq default-input-method "MacOSX")
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; for Windows
+;; Environment Dependence
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (setq default-input-method "W32-IME")
-;; (set-face-font 'default "ＭＳ ゴシック 10")
-;; (set-file-name-coding-system 'cp932)
+(load "env-init.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; General
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; language
+(set-language-environment 'Japanese)
+
 ;; utf-8 / unix
 (prefer-coding-system 'utf-8-unix)
 (set-keyboard-coding-system 'utf-8)
-
-;; load-path
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-
-;; environment
-(set-language-environment 'Japanese)
 
 ;; backup
 (setq make-backup-files nil)
@@ -34,11 +29,11 @@
 ;; inhibit startup message
 (setq inihibit-startup-message t)
 
-;; theme
-(load-theme 'tango-dark t)
-
 ;; frame
 (tool-bar-mode 0)
+
+;; theme
+(load-theme 'tango-dark t)
 
 ;; fullscreen
 (set-frame-parameter nil 'fullscreen 'maximized)
@@ -66,7 +61,7 @@
 ;; cursor
 ;; (global-hl-line-mode 0)
 
-;; line-num
+;; line number
 (global-linum-mode t)
 
 ;; indet
