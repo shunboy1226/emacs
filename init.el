@@ -14,6 +14,9 @@
 ;; General
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; key
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
 ;; language
 (set-language-environment 'Japanese)
 
