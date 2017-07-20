@@ -33,7 +33,7 @@
 (setq inihibit-startup-message t)
 
 ;; frame
-(tool-bar-mode 0)
+;; (tool-bar-mode 0)
 
 ;; theme
 (load-theme 'tango-dark t)
